@@ -1,0 +1,50 @@
+.most-popular {
+    margin: 0 0 70px;
+    .title-holder {
+        @include media ('>=768px'){
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .row {
+        @include media ('>=1024px') {
+            margin: 0 -15px;
+        }
+    }
+
+    .img-holder {
+        margin: 0 0 20px;
+    }
+
+    .most-article {
+        @include media ('>=768px') {
+            width: 100%;
+            width: calc(100% / 2);
+            padding: 15px;
+        }
+    }
+
+    .most-link {
+        @include media ('>=768px') {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        @include media ('>=1024px') {
+            flex-direction: column;
+            gap: 0;
+        }
+   }
+
+   .most-holder {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .btn-holder {
+        display: flex;
+        justify-content: center;
+   }
+}

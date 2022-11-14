@@ -1,0 +1,10 @@
+.full-time {
+    margin: 0 0 90px;
+    .container {
+        @include media ('>=768px') {
+            display: flex;
+            justify-content: space-between;
+            gap: 230px;
+        }
+    }
+}

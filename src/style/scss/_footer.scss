@@ -1,0 +1,46 @@
+.footer {
+    background: #F4F4F4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    text-align: center;
+
+    .contact-holder {
+        @include media ('>=1024px') {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 40px;
+        }
+    }
+    
+    h3 {
+        margin: 0 0 30px;
+    }
+
+    .footer-contact {
+        margin: 0 0 40px;
+    }
+
+    .socials {
+        .img-holder {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 0 40px;
+            img {
+                padding: 0 10px;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    .end {
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+}
